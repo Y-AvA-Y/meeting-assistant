@@ -12,7 +12,6 @@ import {
   Empty,
   Table,
   Divider,
-  Alert,
   Progress,
 } from 'antd';
 import {
@@ -25,7 +24,7 @@ import {
 } from '@ant-design/icons';
 import { useMeetingStore } from '../store';
 import StatusTag from '../components/StatusTag';
-import type { ActionItem, DiscussionPoint } from '../types';
+import type { DiscussionPoint } from '../types';
 
 const { Title, Text, Paragraph } = Typography;
 

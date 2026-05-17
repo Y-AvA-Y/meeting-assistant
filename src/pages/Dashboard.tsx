@@ -11,8 +11,6 @@ import {
 import { useMeetingStore } from '../store';
 import MeetingCard from '../components/MeetingCard';
 import StatusTag from '../components/StatusTag';
-import type { DashboardStats } from '../types';
-
 const { Title } = Typography;
 
 const Dashboard = () => {

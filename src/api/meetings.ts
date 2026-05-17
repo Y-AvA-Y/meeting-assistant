@@ -1,6 +1,6 @@
 import { simulateApiCall } from './client';
 import { seedMeetings, seedMinutes, seedActionItems } from '../mocks/seed';
-import type { Meeting, MeetingMinutes, ActionItem, MeetingFilter, ActionItemFilter } from '../types';
+import type { Meeting, ActionItem, MeetingFilter, ActionItemFilter } from '../types';
 
 // 内存中的数据副本，支持运行时修改
 const meetings = [...seedMeetings];
@@ -8,7 +8,6 @@ const minutes = [...seedMinutes];
 const actionItems = [...seedActionItems];
 
 let meetingIdCounter = 100;
-let actionIdCounter = 200;
 
 // ============ 会议 API ============
 

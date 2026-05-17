@@ -4,7 +4,6 @@ import {
   DashboardOutlined,
   CalendarOutlined,
   CheckSquareOutlined,
-  SnippetsOutlined,
   VideoCameraOutlined,
 } from '@ant-design/icons';
 

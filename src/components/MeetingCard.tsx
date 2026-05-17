@@ -16,7 +16,7 @@ interface MeetingCardProps {
   showActions?: boolean;
 }
 
-const MeetingCard = ({ meeting, showActions = true }: MeetingCardProps) => {
+const MeetingCard = ({ meeting }: MeetingCardProps) => {
   const navigate = useNavigate();
 
   return (

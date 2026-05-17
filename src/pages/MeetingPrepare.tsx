@@ -19,7 +19,6 @@ import {
   ArrowLeftOutlined,
   PlayCircleOutlined,
   CalendarOutlined,
-  CheckCircleOutlined,
   CopyOutlined,
   ClockCircleOutlined,
   UserOutlined,
@@ -29,7 +28,7 @@ import { useMeetingStore } from '../store';
 import StatusTag from '../components/StatusTag';
 import type { PreparationItem } from '../types';
 
-const { Title, Text, Paragraph } = Typography;
+const { Title, Text } = Typography;
 
 const MeetingPrepare = () => {
   const { id } = useParams<{ id: string }>();

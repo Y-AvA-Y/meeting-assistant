@@ -58,7 +58,6 @@ const fill = (template: string, deps: string[], modules: string[]) => {
 
 const generateParticipants = (): Participant[] => {
   const count = randomBetween(3, 8);
-  const roles: Participant['role'][] = ['host', 'speaker', 'attendee'];
   return Array.from({ length: count }, (_, i) => ({
     id: uid(),
     name: faker.person.fullName(),
@@ -219,7 +218,7 @@ export const generateActionItems = (
   meetingTitle?: string
 ): ActionItem[] => {
   const now = new Date();
-  return Array.from({ length: count }, (_, i) => {
+  return Array.from({ length: count }, () => {
     const tpl = pick(ACTION_ITEM_TEMPLATES);
     const dueOffset = randomBetween(-2, 7);
     const dueDate = new Date(now);

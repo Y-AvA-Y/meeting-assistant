@@ -13,7 +13,6 @@ import {
   Typography,
   Skeleton,
   Empty,
-  Tooltip,
 } from 'antd';
 import {
   UserOutlined,
@@ -28,7 +27,7 @@ import {
 } from '@ant-design/icons';
 import { useMeetingStore } from '../store';
 import StatusTag from '../components/StatusTag';
-import type { MeetingMaterial, Participant, AgendaItem, MeetingMinutes } from '../types';
+import type { MeetingMaterial, Participant } from '../types';
 
 const { Title, Text } = Typography;
 
