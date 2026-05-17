@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Layout, Grid } from 'antd';
 import Sidebar from './Sidebar';
 import HeaderBar from './HeaderBar';
+import AIAssistant from '../AIAssistant';
 
 const { Content } = Layout;
 const { useBreakpoint } = Grid;
@@ -37,6 +38,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
           {children}
         </Content>
       </Layout>
+      <AIAssistant />
     </Layout>
   );
 };
