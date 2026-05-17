@@ -14,7 +14,6 @@ import {
   Button,
   Empty,
   Spin,
-  Badge,
 } from 'antd';
 import {
   RobotOutlined,
